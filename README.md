@@ -16,7 +16,9 @@ Step 1 : Navigate to the directory where your main.c file is located to Save :
 Bash
 
 cd path/to/your/project 
+
 3. Compile the Program
+
 Step 2  : Run the C compiler (GCC or Clang) to build the binary executable:
 
 Bash
