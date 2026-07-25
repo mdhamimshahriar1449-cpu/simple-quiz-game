@@ -3,15 +3,14 @@
 
 #define MAX_QUESTIONS 5
 
-// Structure to represent a single quiz question
 typedef struct {
     char question[200];
     char options[4][100];
-    char answer; // Expected input: 'A', 'B', 'C', or 'D'
+    char answer; 
 } Question;
 
 int main() {
-    // Array of quiz questions
+    
     Question quiz[MAX_QUESTIONS] = {
         {
             "What is the main function entry point in C programming?",
@@ -47,21 +46,21 @@ int main() {
     printf("   WELCOME TO THE TERMINAL QUIZ GAME!    \n");
     printf("=========================================\n\n");
 
-    // Loop through each question
+   
     for (int i = 0; i < MAX_QUESTIONS; i++) {
         printf("Question %d: %s\n", i + 1, quiz[i].question);
 
-        // Print multiple choice options
+      
         for (int j = 0; j < 4; j++) {
             printf("  %s\n", quiz[i].options[j]);
         }
 
-        // Prompt user input
+        
         printf("Your Answer (A/B/C/D): ");
         scanf(" %c", &user_choice);
-        user_choice = toupper(user_choice); // Convert input to uppercase for uniform matching
+        user_choice = toupper(user_choice); 
 
-        // Validate answer
+        
         if (user_choice == quiz[i].answer) {
             printf(" Correct!\n\n");
             score++;
@@ -70,7 +69,7 @@ int main() {
         }
     }
 
-    // Display final score summary
+
     printf("=========================================\n");
     printf("               QUIZ OVER                 \n");
     printf("=========================================\n");
