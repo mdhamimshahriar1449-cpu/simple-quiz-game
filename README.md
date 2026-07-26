@@ -90,7 +90,11 @@ o	Input your choice (A, B, C, or D — upper or lowercase) and press Enter.
 8.	View Summary Report: Analyze your final evaluation metrics including score, accuracy percentage, time taken, and overall rating.
 
 📂 Project Structure :
+
 simple-quiz-game/
+
 ├── main.c           # Complete C source code (15 questions, 3 levels, timer logic)
+
 ├── README.md        # Comprehensive project documentation
+
 └── .gitignore       # Excludes compiled binary executables (.exe, out)
