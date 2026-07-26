@@ -12,11 +12,11 @@ University: Pundra University of Science & Technology
 Step-by-Step Setup Guide to Run Program:
 Method 1: Using Terminal or Command Prompt (GCC)
 
-1.Open Terminal / Command Prompt:
+1. Open Terminal / Command Prompt:
 
 Step 1: Open Command Prompt / PowerShell (on Windows) or Terminal (on Linux/macOS).
 
-2.Navigate to Your Project Folder:
+2. Navigate to Your Project Folder:
 
 Step 2.Use the cd command to enter the directory where your main.c file is saved:
 
@@ -24,7 +24,7 @@ Bash:
 
 cd path/to/your/project-folder
 
-3.Compile the Code:
+3. Compile the Code:
 
 Step 3.Run the compiler to build the program:
 
