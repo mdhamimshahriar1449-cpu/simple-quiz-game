@@ -1,9 +1,15 @@
 👤 Member 1 Information
+
 •	Name: MD HAMIM SHAHRIAR
+
 •	Roll Number: 0322410105101042
+
 •	Batch: 20
+
 •	Department: Computer Science & Engineering
+
 •	University: Pundra University of Science & Technology
+
 •	GitHub: mdhamimshahriar1449-cpu
 
 # Simple Quiz Game in C
