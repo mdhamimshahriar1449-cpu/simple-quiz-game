@@ -18,54 +18,39 @@ Step 1: Open Command Prompt / PowerShell (on Windows) or Terminal (on Linux/macO
 
 2. Navigate to Your Project Folder:
 
-Step 2.Use the cd command to enter the directory where your main.c file is saved:
+Step 2. Use the cd command to enter the directory where your main.c file is saved:
 
-Bash:
+TYPE THIS CODE : cd path/to/your/project-folder
 
-cd path/to/your/project-folder
+3. NEXT Compile the Code:
 
-3. Compile the Code:
+Step 3. Run the compiler to build the program:
 
-Step 3.Run the compiler to build the program:
+Windows TYPE : gcc main.c -o quiz_game.exe
 
-Windows:
+Linux / macOS TYPE : gcc main.c -o quiz_game
 
-DOS 
+4.NEXT Run the Executable:
 
-gcc main.c -o quiz_game.exe
+Step 4. Execute the compiled program:
 
-Linux / macOS :
+Windows TYPE : .\quiz_game.exe
 
-Bash:
+Linux / macOS TYPE: ./quiz_game
 
-gcc main.c -o quiz_game
+🎮 How to Play: 
 
-4.Run the Executable:
-
-Step 4.Execute the compiled program:
-
-Windows:
-
-DOS
-
-.\quiz_game.exe
-
-Linux / macOS:
-
-Bash
-
-./quiz_game
-
-🎮 How to Play
 1.Launch the executable file in your terminal.
 
-2.Input your Candidate Name and Roll Number.
+2.Enter your Candidate Name and Roll Number.
 
-3.Press Enter to begin the quiz.
+3.Press Enter to start Level 1 (Easy).
 
-4.Read each question and select an option by typing A, B, C, or D (or lowercase a, b, c, d).
+4.For each question, type A, B, C, or D (or lowercase equivalents) and press Enter.
 
-5.Review your final summary screen containing correct vs. incorrect totals, percentage, and performance appraisal.
+5.Observe instant correctness feedback alongside your response time in seconds.
+
+6.Progress through all 3 levels (15 total questions) to view your final summary report.
 
 # Simple Quiz Game in C
 
@@ -74,24 +59,24 @@ A lightweight, terminal-based interactive multiple-choice quiz game written in C
 ---
 
 ## 📌 Project Overview
-Traditional study methods can often feel dry and lack engagement. The **Simple Quiz Game** is designed to provide students and learners with a fast, interactive way to test their C programming knowledge directly inside the terminal. The program prompts for student credentials, evaluates answers sequentially, tracks accurate performance metrics, and generates a comprehensive evaluation summary upon completion.
+Traditional study methods can often feel dry and lack engagement. The **Simple Quiz Game** is designed to provide students and learners with a fast, interactive way to test their C programming knowledge directly inside the terminal across multiple difficulty levels. The program prompts for candidate credentials, tracks answering speed in real-time, evaluates answers sequentially, and generates a comprehensive performance summary upon completion.
 
 ---
 
 ## ✨ Features
-- **Candidate Identification:** Prompts for player Name and Roll Number before beginning the test.
-- **10 Multiple-Choice Questions:** Expanded question capacity covering key C programming concepts.
+- **Candidate Identification:** Prompts for player Name and Roll Number before starting the test.
+- **3 Difficulty Levels:** Automatically categorizes questions into **Level 1 (Easy)**, **Level 2 (Medium)**, and **Level 3 (Hard)**.
+- **15 Questions Capacity:** 5 distinct multiple-choice questions for each difficulty tier.
+- **Per-Question Timer:** Tracks and displays the exact duration (in seconds) taken to answer each question.
 - **Case-Insensitive Input:** Accepts both lowercase (`a`, `b`, `c`, `d`) and uppercase (`A`, `B`, `C`, `D`) inputs seamlessly.
-- **Real-Time Feedback:** Displays instant correctness verification after each question.
-- **Detailed Score Breakdown:** Displays total questions, correct answers count, and incorrect answers count.
-- **Automated Performance Rating:** Generates personalized appraisal ratings based on the overall percentage score.
+- **Detailed Final Metrics:** Reports correct/incorrect answer counts, total time taken, average time per question, percentage score, and performance appraisal.
 
 ---
 
 ## 🛠️ Requirements & Prerequisites
 To compile and run this program, ensure you have a standard C compiler installed on your system:
 - **GCC Compiler** (MinGW for Windows, GNU Compiler Collection for Linux/macOS)
-- **Git** (optional, for repository management)
+- **Git** (optional, for version control)
 
 ---
 
@@ -102,9 +87,7 @@ To compile and run this program, ensure you have a standard C compiler installed
 git clone [https://github.com/mdhamimshahriar1449-cpu/simple-quiz-game.git](https://github.com/mdhamimshahriar1449-cpu/simple-quiz-game.git)
 cd simple-quiz-game
 
-Project Structure
 simple-quiz-game/
-├── main.c           # Complete source code in C
+├── main.c           # Complete source code in C (15 questions, 3 levels, timer)
 ├── README.md        # Project documentation and setup guide
 └── .gitignore       # Ignores compiled binary executables
-Project Structure
