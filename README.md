@@ -21,10 +21,15 @@ Traditional study methods can often feel dry and lack engagement, making it diff
 
 3. ✨ Features
 i) Candidate Identification:** Captures and displays candidate Name and Roll Number on the final score report.
+
 ii) 3 Difficulty Levels:** Features 15 questions categorized into **Level 1 (Easy)**, **Level 2 (Medium)**, and **Level 3 (Hard)**.
+
 iii) Per-Question Response Timer:** Uses `<time.h>` to measure and display the exact duration (in seconds) taken to answer each question.
+
 Iv) Case-Insensitive Input:** Accepts both lowercase (`a`, `b`, `c`, `d`) and uppercase (`A`, `B`, `C`, `D`) inputs seamlessly.
+
 v) Real-Time Feedback:** Displays instant correctness verification alongside time taken right after answering each question.
+
 vi) Detailed Score Breakdown:** Reports total correct answers, incorrect answers, total time taken, average time per question, percentage accuracy, and performance appraisal.
 
 5.  🛠️ Requirements & Prerequisites
