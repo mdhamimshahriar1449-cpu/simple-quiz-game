@@ -90,6 +90,20 @@ Method 3: Using Code::Blocks
 
 1.	A console window will pop up running your quiz game use Method 1.
 
+Method 3:  Use in Dev-C++
+
+Step 1 : Launch the Dev-C++ application on your computer.
+
+Step 2 :  If opening an existing file: Go to File ➔ Open (or press Ctrl + O) and select your main.c file.
+
+Step 3 : Execute :
+
+•	Click on Execute in the top menu bar, then click Compile & Run.
+
+•	Shortcut : Simply press F11 on your keyboard.
+
+Step 5: Play in Console Window : A black terminal/console window will pop up running your game. You can now enter your Name, Roll Number, and answer the 15 quiz questions across all 3 levels.
+
 4. 🎮 Usage Guidance
 
 1.	Start the Application: Run the compiled binary executable in your terminal window.
