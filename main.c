@@ -6,18 +6,18 @@
 #define MAX_QUESTIONS 15
 #define QUESTIONS_PER_LEVEL 5
 
-// Structure to represent a single quiz question
+
 typedef struct {
     char question[200];
     char options[4][100];
-    char answer; // Expected input: 'A', 'B', 'C', or 'D'
-    int level;   // 1: Easy, 2: Medium, 3: Hard
+    char answer;
+    int level;
 } Question;
 
 int main() {
-    // Array of 15 quiz questions across 3 levels (5 questions each)
+
     Question quiz[MAX_QUESTIONS] = {
-        // --- LEVEL 1: EASY ---
+
         {
             "What is the main function entry point in C programming?",
             {"A. start()", "B. main()", "C. init()", "D. run()"},
@@ -44,7 +44,7 @@ int main() {
             'B', 1
         },
 
-        // --- LEVEL 2: MEDIUM ---
+
         {
             "Which operator is used to get the memory address of a variable?",
             {"A. *", "B. %", "C. &", "D. #"},
@@ -71,7 +71,7 @@ int main() {
             'B', 2
         },
 
-        // --- LEVEL 3: HARD ---
+
         {
             "What is the default value of an uninitialized local automatic variable in C?",
             {"A. 0", "B. 1", "C. NULL", "D. Garbage value"},
@@ -110,7 +110,7 @@ int main() {
     printf("   WELCOME TO THE TERMINAL QUIZ GAME!    \n");
     printf("=========================================\n\n");
 
-    // Input Candidate Name and Roll Number
+
     printf("Enter Candidate Name : ");
     fgets(player_name, sizeof(player_name), stdin);
     player_name[strcspn(player_name, "\n")] = 0;
@@ -122,9 +122,9 @@ int main() {
     printf("\nPress Enter to start the quiz...");
     getchar();
 
-    // Loop through all 15 questions
+
     for (int i = 0; i < MAX_QUESTIONS; i++) {
-        // Display Level Header at the start of each 5-question set
+
         if (i == 0) {
             printf("\n=========================================\n");
             printf("            LEVEL 1: EASY                \n");
@@ -141,25 +141,25 @@ int main() {
 
         printf("Question %d (Level %d): %s\n", i + 1, quiz[i].level, quiz[i].question);
 
-        // Print multiple choice options
+
         for (int j = 0; j < 4; j++) {
             printf("  %s\n", quiz[i].options[j]);
         }
 
-        // Feature 1: Start timer for this specific question
+
         time_t q_start_time = time(NULL);
 
-        // Prompt user input
+
         printf("Your Answer (A/B/C/D): ");
         scanf(" %c", &user_choice);
         user_choice = toupper(user_choice);
 
-        // Feature 1: End timer and calculate time taken for this question
+
         time_t q_end_time = time(NULL);
         double q_time_taken = difftime(q_end_time, q_start_time);
         total_quiz_time += q_time_taken;
 
-        // Validate answer and display time taken for current question
+
         if (user_choice == quiz[i].answer) {
             printf(" Correct! (Time taken: %.0f sec)\n\n", q_time_taken);
             correct_count++;
@@ -169,7 +169,7 @@ int main() {
         }
     }
 
-    // Display Final Score Summary
+
     printf("=========================================\n");
     printf("               QUIZ OVER                 \n");
     printf("=========================================\n");
