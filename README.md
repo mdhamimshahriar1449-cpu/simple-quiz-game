@@ -90,7 +90,7 @@ Method 3: Using Code::Blocks
 
 1.	A console window will pop up running your quiz game use Method 1.
 
-Method 3:  Use in Dev-C++
+Method 4:  Use in Dev-C++
 
 Step 1 : Launch the Dev-C++ application on your computer.
 
