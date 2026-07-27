@@ -17,9 +17,11 @@
 A lightweight, multi-level, terminal-based interactive multiple-choice quiz game written in C. Developed for **Software Development Lab I** at Pundra University of Science & Technology.
 
 1.	📌 Project Overview
+
 Traditional study methods can often feel dry and lack engagement, making it difficult for students to test their knowledge effectively. The **Simple Quiz Game** is designed to provide learners with a fast, interactive way to test their C programming knowledge directly inside the console across multiple difficulty tiers. The program prompts for student credentials, measures response time in real-time using system clocks, evaluates answers sequentially, and generates a comprehensive performance report upon completion.
 
-3. ✨ Features
+2. ✨ Features
+
 i) Candidate Identification:** Captures and displays candidate Name and Roll Number on the final score report.
 
 ii) 3 Difficulty Levels:** Features 15 questions categorized into **Level 1 (Easy)**, **Level 2 (Medium)**, and **Level 3 (Hard)**.
@@ -32,7 +34,7 @@ v) Real-Time Feedback:** Displays instant correctness verification alongside tim
 
 vi) Detailed Score Breakdown:** Reports total correct answers, incorrect answers, total time taken, average time per question, percentage accuracy, and performance appraisal.
 
-5.  🛠️ Requirements & Prerequisites
+3.  🛠️ Requirements & Prerequisites
 
 To compile and run this project, ensure you have a C compiler installed on your system:
 
@@ -40,7 +42,7 @@ i) GCC Compiler** (MinGW for Windows, GNU Compiler Collection for Linux/macOS)
 
 ii) Git** (for version control and submission)
 
-7. 🚀 Build & Run game  Instructions : 
+4. 🚀 Build & Run game  Instructions : 
 
 1. Clone the Repository :- git clone [https://github.com/mdhamimshahriar1449-cpu/simple-quiz-game.git] (https://github.com/mdhamimshahriar1449-cpu/simple-quiz-game.git)
 
@@ -73,28 +75,42 @@ ii)	Linux / macOS type : ./quiz_game
 
 
 Method 2: Using VS Code (Visual Studio Code)
+
 1.	Open VS Code and open the folder containing main.c.
+   
 2.	Make sure you have the C/C++ extension by Microsoft installed.
+   
 3.	Open main.c in the editor.
+
 4.	Click the Play / Run button (▶) in the top-right corner of VS Code, or press Ctrl + F5 (Windows) / Cmd + F5 (macOS).
+   
 5.	The terminal panel at the bottom will open automatically and run the program.
 
 Method 3: Using Code::Blocks 
+
 1.	A console window will pop up running your quiz game use Method 1.
 
-🎮 Usage Guidance
+4. 🎮 Usage Guidance
+
 1.	Start the Application: Run the compiled binary executable in your terminal window.
+
 2.	Enter Candidate Information: Type your Name and Roll Number when prompted.
+
 3.	Begin Quiz: Press Enter to proceed to Level 1: Easy.
-4.	Answer Questions:
+
+5.	Answer Questions:
+
 o	Read the question and four options (A, B, C, D).
+
 o	Input your choice (A, B, C, or D — upper or lowercase) and press Enter.
 
 6.	Review Instant Feedback: See if your answer was correct and view the exact seconds taken to submit that response.
+
 7.	Complete All Levels: Progress sequentially through Level 1 (5 questions), Level 2 (5 questions), and Level 3 (5 questions).
+
 8.	View Summary Report: Analyze your final evaluation metrics including score, accuracy percentage, time taken, and overall rating.
 
-📂 Project Structure :
+6. 📂 Project Structure :
 
 simple-quiz-game/
 
