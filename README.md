@@ -16,7 +16,8 @@
 
 A lightweight, multi-level, terminal-based interactive multiple-choice quiz game written in C. Developed for Software Development Lab I at Pundra University of Science & Technology.
 
-1.	Project Overview
+1.📌 Project Overview
+
 Traditional study methods can often feel dry and lack engagement, making it difficult for students to test their knowledge effectively. The Simple Quiz Game is designed to provide learners with a fast, interactive way to test their C programming, OS, DBMS, and Data Structures knowledge directly inside the terminal across selectable difficulty tiers. The program prompts for candidate credentials, allows pre-game level selection, measures response times in real-time using system clocks (<time.h>), evaluates answers sequentially and generates a comprehensive performance report upon completion.
 
 2. ✨ Features
@@ -137,6 +138,9 @@ Step 5: Play in Console Window : A black terminal/console window will pop up run
 6. 📂 Project Structure
    
 simple-quiz-game/
+
 ├── main.c           # Complete C source code (15 questions, interactive menu, timer)
+
 ├── README.md        # Detailed project documentation
+
 └── .gitignore       # Excludes built executable binaries (.exe, .out, object files)
