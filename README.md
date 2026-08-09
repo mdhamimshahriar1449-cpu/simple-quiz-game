@@ -24,7 +24,7 @@ Traditional study methods can often feel dry and lack engagement, making it diff
 
 i) Candidate Identification:** Captures and displays candidate Name and Roll Number on the final score report.
 
-ii) ENTRER CLICE GAME AUTO START NO MANUAL SELACTION LEVEL IN GAME
+ii) ENTER CLICE GAME AUTO START NO MANUAL SELACTION LEVEL IN GAME
 
 iii) 3 Difficulty Levels:** Features 15 questions categorized into **Level 1 (Easy)**, **Level 2 (Medium)**, and **Level 3 (Hard)**.
 
