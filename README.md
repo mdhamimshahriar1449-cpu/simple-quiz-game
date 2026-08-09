@@ -12,41 +12,41 @@
 
 •	GitHub: mdhamimshahriar1449-cpu
 
-# Simple Quiz Game in C
+#Simple Quiz Game in C
 
-A lightweight, multi-level, terminal-based interactive multiple-choice quiz game written in C. Developed for **Software Development Lab I** at Pundra University of Science & Technology.
+A lightweight, multi-level, terminal-based interactive multiple-choice quiz game written in C. Developed for Software Development Lab I at Pundra University of Science & Technology.
 
-1.	📌 Project Overview
-
-Traditional study methods can often feel dry and lack engagement, making it difficult for students to test their knowledge effectively. The **Simple Quiz Game** is designed to provide learners with a fast, interactive way to test their C programming knowledge directly inside the console across multiple difficulty tiers. The program prompts for student credentials, measures response time in real-time using system clocks, evaluates answers sequentially, and generates a comprehensive performance report upon completion.
+1.	Project Overview
+Traditional study methods can often feel dry and lack engagement, making it difficult for students to test their knowledge effectively. The Simple Quiz Game is designed to provide learners with a fast, interactive way to test their C programming, OS, DBMS, and Data Structures knowledge directly inside the terminal across selectable difficulty tiers. The program prompts for candidate credentials, allows pre-game level selection, measures response times in real-time using system clocks (<time.h>), evaluates answers sequentially and generates a comprehensive performance report upon completion.
 
 2. ✨ Features
 
-i) Candidate Identification:** Captures and displays candidate Name and Roll Number on the final score report.
+1. Candidate Identification: Captures candidate Name and Roll Number at launch and displays them on the final evaluation report.
 
-ii) ENTER CLICE GAME AUTO START NO MANUAL SELACTION LEVEL IN GAME
+2. Pre-Game Level Selection Menu: Offers flexibility to play a single difficulty tier (Level 1, Level 2, or Level 3) or play through all 15 questions sequentially.
 
-iii) 3 Difficulty Levels:** Features 15 questions categorized into **Level 1 (Easy)**, **Level 2 (Medium)**, and **Level 3 (Hard)**.
+3. 15 Categorized Questions across 3 Difficulty Levels: Covers core Computer Science topics including Database Systems, Algorithms, Structured Programming, and Operating Systems.
 
-iv) Per-Question Response Timer:** Uses `<time.h>` to measure and display the exact duration (in seconds) taken to answer each question.
+4. Per-Question Response Timer: Employs <time.h> to calculate and display exact response duration in both seconds and minutes after every submission.
 
-v) Case-Insensitive Input:** Accepts both lowercase (`a`, `b`, `c`, `d`) and uppercase (`A`, `B`, `C`, `D`) inputs seamlessly.
+5. Case-Insensitive Input: Seamlessly accepts both lowercase (a, b, c, d) and uppercase (A, B, C, D) inputs using toupper().
 
-vi) Real-Time Feedback:** Displays instant correctness verification alongside time taken right after answering each question.
+6. Real-Time Feedback: Instantly verifies correctness and reveals correct answers alongside time metrics immediately after each question.
 
-vii) Detailed Score Breakdown:** Reports total correct answers, incorrect answers, total time taken, average time per question, percentage accuracy, and performance appraisal.
+7. Detailed Score Report & Performance Appraisal: Summarizes total correct/incorrect answers, overall time taken, average time per question, accuracy percentage, and an automated performance evaluation grade.
 
 3.  🛠️ Requirements & Prerequisites
+   
+1. To compile and execute this project, ensure you have a standard C compiler installed:
 
-To compile and run this project, ensure you have a C compiler installed on your system:
+2. GCC Compiler (MinGW for Windows, or standard GNU Compiler Collection on Linux/macOS)
 
-i) GCC Compiler** (MinGW for Windows, GNU Compiler Collection for Linux/macOS)
+3. Git (for repository cloning and version management)
 
-ii) Git** (for version control and submission)
+4. 🚀 Build & Run Instructions
 
-4. 🚀 Build & Run game  Instructions : 
-
-1. Clone the Repository :- git clone [https://github.com/mdhamimshahriar1449-cpu/simple-quiz-game.git] (https://github.com/mdhamimshahriar1449-cpu/simple-quiz-game.git)
+Clone the Repository : git clone https://github.com/mdhamimshahriar1449-cpu/simple-quiz-game.git
+cd simple-quiz-game
 
 Method 1: Using Terminal or Command Prompt (GCC)
 
@@ -88,50 +88,55 @@ Method 2: Using VS Code (Visual Studio Code)
    
 5.	The terminal panel at the bottom will open automatically and run the program.
 
-Method 3: Using Code::Blocks 
+Method 3: Using Code::Blocks
 
-1.	A console window will pop up running your quiz game use Method 1.
+step 1: Open Code::Blocks and create a new Console Application project or open main.c directly.
 
-Method 4:  Use in Dev-C++
+step 2: Build and run the project by pressing F9 or clicking Build and Run from the top toolbar.
 
-Step 1 : Launch the Dev-C++ application on your computer.
+Method 4: Using Dev-C++
 
-Step 2 :  If opening an existing file: Go to File ➔ Open (or press Ctrl + O) and select your main.c file.
+step 1: Launch Dev-C++.
 
-Step 3 : Execute :
+step 2: Go to File ➔ Open (Ctrl + O) and select main.c.
 
-•	Click on Execute in the top menu bar, then click Compile & Run.
+step 3: Click Execute ➔ Compile & Run or press F11.
 
-•	Shortcut : Simply press F11 on your keyboard.
+step 4: Interact with the application in the external console window that appears.
 
 Step 5: Play in Console Window : A black terminal/console window will pop up running your game. You can now enter your Name, Roll Number, and answer the 15 quiz questions across all 3 levels.
 
-4. 🎮 Usage Guidance
+5.🎮 Usage Guidance
 
-1.	Start the Application: Run the compiled binary executable in your terminal window.
+1. Launch the Executable: Run the binary in your console environment.
 
-2.	Enter Candidate Information: Type your Name and Roll Number when prompted.
+2. Enter Candidate Details: Input your Name and Roll Number when prompted.
 
-3.	Begin Quiz: Press Enter to proceed to Level 1: Easy.
+3. Select Game Mode:
 
-5.	Answer Questions:
+1 — Level 1 (Easy Only — 5 Questions)
 
-o	Read the question and four options (A, B, C, D).
+2 — Level 2 (Medium Only — 5 Questions)
 
-o	Input your choice (A, B, C, or D — upper or lowercase) and press Enter.
+3 — Level 3 (Hard Only — 5 Questions)
 
-6.	Review Instant Feedback: See if your answer was correct and view the exact seconds taken to submit that response.
+4 — All Play Option (All 15 Questions across 3 Levels)
 
-7.	Complete All Levels: Progress sequentially through Level 1 (5 questions), Level 2 (5 questions), and Level 3 (5 questions).
+4. Begin Quiz: Press Enter to start answering questions.
 
-8.	View Summary Report: Analyze your final evaluation metrics including score, accuracy percentage, time taken, and overall rating.
+5. Answer Questions:
 
-6. 📂 Project Structure :
+6. Read the displayed question and options (A, B, C, D).
 
+7. Type your answer choice (case-insensitive) and press Enter.
+
+8. Review Instant Feedback: Check whether your answer was correct, view the exact answer if incorrect, and observe your time taken.
+
+9. Analyze Report: Review your comprehensive accuracy percentage, total/average time, and performance rating at the end of the game.
+
+6. 📂 Project Structure
+   
 simple-quiz-game/
-
-├── main.c           # Complete C source code (15 questions, 3 levels, timer logic)
-
-├── README.md        # Comprehensive project documentation
-
-└── .gitignore       # Excludes compiled binary executables (.exe, out)
+├── main.c           # Complete C source code (15 questions, interactive menu, timer)
+├── README.md        # Detailed project documentation
+└── .gitignore       # Excludes built executable binaries (.exe, .out, object files)
