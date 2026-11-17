@@ -12,10 +12,15 @@ Technology**.
   Field             Details
   ----------------- -------------------------------------------
   Name              MD HAMIM SHAHRIAR
+  
   Roll Number       0322410105101042
+  
   Batch             20
+  
   Department        Computer Science & Engineering
+  
   University        Pundra University of Science & Technology
+  
   GitHub Username   `mdhamimshahriar1449-cpu`
 
 1. 📌 Project Overview
