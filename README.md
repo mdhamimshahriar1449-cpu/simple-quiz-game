@@ -188,24 +188,28 @@ Method 4: Using Dev-C++
 4.  Select a game mode:
 
       Choice   Mode                                    Number of Questions
+    
       -------- ------------------------------------- ---------------------
       1        Level 1 --- Easy                                          5
+    
       2        Level 2 --- Medium                                        5
+    
       3        Level 3 --- Hard                                          5
+    
       4        All Play --- Easy, Medium, and Hard                      15
 
-5.  Press Enter when prompted to start the quiz.
+6.  Press Enter when prompted to start the quiz.
 
-6.  Read each question and its four options (A, B, C, and D).
+7.  Read each question and its four options (A, B, C, and D).
 
-7.  Enter your selected answer and press Enter. Both uppercase and
+8.  Enter your selected answer and press Enter. Both uppercase and
     lowercase letters are accepted.
 
-8.  Read the immediate feedback and the time taken for the question.
+9.  Read the immediate feedback and the time taken for the question.
 
-9.  Continue until all questions in the selected mode are completed.
+10.  Continue until all questions in the selected mode are completed.
 
-10. Review the final report, including your score, accuracy, total time,
+11. Review the final report, including your score, accuracy, total time,
     average response time, and performance message.
 
 6. 📂 Project Structure
@@ -227,12 +231,16 @@ performance analysis system.
 -   Question Timing: Records the start and end time for each
     question using `time()` and calculates the elapsed time with
     `difftime()`.
+    
 -   Total Time Calculation: Adds the response times to calculate the
     total quiz time.
+    
 -   Average Response Time: Calculates the average time taken per
     question.
+    
 -   Accuracy Calculation: Calculates the percentage of correct
     answers.
+    
 -   Performance Evaluation: Displays an automatic performance
     message based on the final accuracy percentage.
 
