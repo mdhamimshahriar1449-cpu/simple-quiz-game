@@ -209,7 +209,7 @@ int main() {
     double avg_time_min = avg_time_sec / 60.0;
     double percentage = total_asked > 0 ? ((double)correct_count / total_asked) * 100.0 : 0.0;
 
-  
+   
     printf("=========================================\n");
     printf("               QUIZ OVER                 \n");
     printf("=========================================\n");
