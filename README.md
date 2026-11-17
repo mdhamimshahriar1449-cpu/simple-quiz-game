@@ -1,146 +1,249 @@
+# Simple Quiz Game in C
+
+A lightweight, multi-level, terminal-based multiple-choice quiz game
+written in the C programming language. This project was developed for
+**Software Development Lab I** at **Pundra University of Science &
+Technology**.
+
+------------------------------------------------------------------------
+
 👤 Member 1 Information
 
-•	Name: MD HAMIM SHAHRIAR
+  Field             Details
+  ----------------- -------------------------------------------
+  Name              MD HAMIM SHAHRIAR
+  Roll Number       0322410105101042
+  Batch             20
+  Department        Computer Science & Engineering
+  University        Pundra University of Science & Technology
+  GitHub Username   `mdhamimshahriar1449-cpu`
 
-•	Roll Number: 0322410105101042
+1. 📌 Project Overview
 
-•	Batch: 20
+Traditional study methods can sometimes feel unengaging and provide
+limited opportunities for students to test their knowledge. The **Simple
+Quiz Game** provides learners with an interactive way to assess their
+understanding of core Computer Science topics, including C programming,
+Operating Systems, Database Management Systems, and Data Structures.
 
-•	Department: Computer Science & Engineering
+The application runs in a terminal and begins by collecting the
+candidate's name and roll number. Users can then choose one of three
+difficulty levels---Easy, Medium, or Hard---or attempt all 15 questions.
+The program checks each answer, provides immediate feedback, and
+measures the time taken to answer each question using the C `time.h`
+library.
 
-•	University: Pundra University of Science & Technology
-
-•	GitHub: mdhamimshahriar1449-cpu
-
-#Simple Quiz Game in C
-
-A lightweight, multi-level, terminal-based interactive multiple-choice quiz game written in C. Developed for Software Development Lab I at Pundra University of Science & Technology.
-
-1.📌 Project Overview
-
-Traditional study methods can often feel dry and lack engagement, making it difficult for students to test their knowledge effectively. The Simple Quiz Game is designed to provide learners with a fast, interactive way to test their C programming, OS, DBMS, and Data Structures knowledge directly inside the terminal across selectable difficulty tiers. The program prompts for candidate credentials, allows pre-game level selection, measures response times in real-time using system clocks (<time.h>), evaluates answers sequentially and generates a comprehensive performance report upon completion.
+After the quiz, the application displays a performance report containing
+the number of correct and incorrect answers, accuracy percentage, total
+quiz time, average response time, and an automatic performance message.
 
 2. ✨ Features
 
-1. Candidate Identification: Captures candidate Name and Roll Number at launch and displays them on the final evaluation report.
+1.  **Candidate Identification:** Collects the candidate's name and roll
+    number and displays them in the final report.
+2.  **Pre-Game Level Selection:** Allows users to play one difficulty
+    level or all 15 questions.
+3.  **Three Difficulty Levels:** Includes 5 Easy, 5 Medium, and 5 Hard
+    questions.
+4.  **Computer Science Questions:** Covers topics such as C programming,
+    algorithms, Database Management Systems, and Operating Systems.
+5.  **Per-Question Response Timer:** Uses `time.h`, `time()`, and
+    `difftime()` to calculate response time in seconds and minutes.
+6.  **Case-Insensitive Input:** Accepts both uppercase and lowercase
+    answer choices using `toupper()`.
+7.  **Immediate Feedback:** Checks each answer and displays the correct
+    answer when the submitted answer is incorrect.
+8.  **Performance Report:** Displays total questions, correct and
+    incorrect answers, and accuracy percentage.
+9.  **Time Analysis:** Calculates total quiz duration and average
+    response time per question.
+10. **Automatic Performance Evaluation:** Displays a performance message
+    based on the final accuracy percentage.
 
-2. Pre-Game Level Selection Menu: Offers flexibility to play a single difficulty tier (Level 1, Level 2, or Level 3) or play through all 15 questions sequentially.
+3. 🛠️ Requirements & Prerequisites
 
-3. 15 Categorized Questions across 3 Difficulty Levels: Covers core Computer Science topics including Database Systems, Algorithms, Structured Programming, and Operating Systems.
+To compile and run the project, you need:
 
-4. Per-Question Response Timer: Employs <time.h> to calculate and display exact response duration in both seconds and minutes after every submission.
-
-5. Case-Insensitive Input: Seamlessly accepts both lowercase (a, b, c, d) and uppercase (A, B, C, D) inputs using toupper().
-
-6. Real-Time Feedback: Instantly verifies correctness and reveals correct answers alongside time metrics immediately after each question.
-
-7. Detailed Score Report & Performance Appraisal: Summarizes total correct/incorrect answers, overall time taken, average time per question, accuracy percentage, and an automated performance evaluation grade.
-
-3.  🛠️ Requirements & Prerequisites
-   
-1. To compile and execute this project, ensure you have a standard C compiler installed:
-
-2. GCC Compiler (MinGW for Windows, or standard GNU Compiler Collection on Linux/macOS)
-
-3. Git (for repository cloning and version management)
+-   A C compiler, such as GCC (MinGW on Windows or GCC on Linux/macOS).
+-   A terminal or command prompt.
+-   Git (optional, for cloning and version control).
+-   An editor or IDE, such as Visual Studio Code, Code::Blocks, or
+    Dev-C++.
 
 4. 🚀 Build & Run Instructions
 
-Clone the Repository : git clone https://github.com/mdhamimshahriar1449-cpu/simple-quiz-game.git
+### Clone the Repository
+
+Open a terminal and run:
+
+
+git clone https://github.com/mdhamimshahriar1449-cpu/simple-quiz-game.git
 cd simple-quiz-game
 
-Method 1: Using Terminal or Command Prompt (GCC)
 
-Step 1: Open Command Prompt / PowerShell (on Windows) or Terminal (on Linux/macOS).
+If you have already downloaded the project, open a terminal in the
+folder containing `main.c`.
 
-Step 2: Navigate to Your Project Folder. Use the cd command to enter the directory where your main.c file is saved : 
+### Method 1: Using GCC in a Terminal or Command Prompt
 
-Type This code: cd path/to/your/project-folder 
+Step 1: Open a terminal.
 
-(Note : Project folder create in Dextop before main.c file save it. Then work properly Methode 1 and 3 are same)
+-   Windows: Open Command Prompt or PowerShell.
+-   Linux/macOS: Open Terminal.
 
-Step 3 :  Compile the Code Run the compiler to build the program :
+Step 2: Navigate to the project folder.
 
-i)	Windows type : gcc main.c -o quiz_game.exe
-
-or
-
-ii)	Linux / macOS type : gcc main.c -o quiz_game
+cd path/to/simple-quiz-game
 
 
-Step 4 : Run the Executable the compiled program:
+Replace `path/to/simple-quiz-game` with the actual location of your
+project folder.
 
-i)	Windows type : .\quiz_game.exe
+Step 3: Compile the source code.
 
-or
+Windows:
 
-ii)	Linux / macOS type : ./quiz_game
+gcc main.c -o quiz_game.exe
 
 
-Method 2: Using VS Code (Visual Studio Code)
+Linux/macOS:
 
-1.	Open VS Code and open the folder containing main.c.
-   
-2.	Make sure you have the C/C++ extension by Microsoft installed.
-   
-3.	Open main.c in the editor.
 
-4.	Click the Play / Run button (▶) in the top-right corner of VS Code, or press Ctrl + F5 (Windows) / Cmd + F5 (macOS).
-   
-5.	The terminal panel at the bottom will open automatically and run the program.
+gcc main.c -o quiz_game
+
+
+Step 4: Run the program.
+
+Windows:
+
+powershell
+
+.\quiz_game.exe
+
+Linux/macOS:
+
+./quiz_game
+
+Method 2: Using Visual Studio Code
+
+1.  Open Visual Studio Code.
+2.  Open the folder containing `main.c`.
+3.  Install the Microsoft C/C++ extension if it is not already
+    installed.
+4.  Make sure a C compiler such as GCC is installed and available in the
+    system PATH.
+5.  Open the integrated terminal (**Terminal → New Terminal**).
+6.  Compile and run using the GCC commands shown in Method 1.
 
 Method 3: Using Code::Blocks
 
-step 1: Open Code::Blocks and create a new Console Application project or open main.c directly.
-
-step 2: Build and run the project by pressing F9 or clicking Build and Run from the top toolbar.
+1.  Open Code::Blocks.
+2.  Create a Console Application project or open the source file in a
+    suitable project.
+3.  Add `main.c` to the project if necessary.
+4.  Select **Build and Run** or press **F9**.
 
 Method 4: Using Dev-C++
 
-step 1: Launch Dev-C++.
+1.  Launch Dev-C++.
+2.  Select **File → Open** and choose `main.c`.
+3.  Select **Execute → Compile & Run** or press **F11**.
+4.  The program will open in a console window.
 
-step 2: Go to File ➔ Open (Ctrl + O) and select main.c.
+5. 🎮 Usage Guidance
 
-step 3: Click Execute ➔ Compile & Run or press F11.
+1.  Run the compiled program in a terminal or console window.
 
-step 4: Interact with the application in the external console window that appears.
+2.  Enter your candidate name.
 
-Step 5: Play in Console Window : A black terminal/console window will pop up running your game. You can now enter your Name, Roll Number, and answer the 15 quiz questions across all 3 levels.
+3.  Enter your roll number.
 
-5.🎮 Usage Guidance
+4.  Select a game mode:
 
-1. Launch the Executable: Run the binary in your console environment.
+      Choice   Mode                                    Number of Questions
+      -------- ------------------------------------- ---------------------
+      1        Level 1 --- Easy                                          5
+      2        Level 2 --- Medium                                        5
+      3        Level 3 --- Hard                                          5
+      4        All Play --- Easy, Medium, and Hard                      15
 
-2. Enter Candidate Details: Input your Name and Roll Number when prompted.
+5.  Press Enter when prompted to start the quiz.
 
-3. Select Game Mode:
+6.  Read each question and its four options (A, B, C, and D).
 
-1 — Level 1 (Easy Only — 5 Questions)
+7.  Enter your selected answer and press Enter. Both uppercase and
+    lowercase letters are accepted.
 
-2 — Level 2 (Medium Only — 5 Questions)
+8.  Read the immediate feedback and the time taken for the question.
 
-3 — Level 3 (Hard Only — 5 Questions)
+9.  Continue until all questions in the selected mode are completed.
 
-4 — All Play Option (All 15 Questions across 3 Levels)
-
-4. Begin Quiz: Press Enter to start answering questions.
-
-5. Answer Questions:
-
-6. Read the displayed question and options (A, B, C, D).
-
-7. Type your answer choice (case-insensitive) and press Enter.
-
-8. Review Instant Feedback: Check whether your answer was correct, view the exact answer if incorrect, and observe your time taken.
-
-9. Analyze Report: Review your comprehensive accuracy percentage, total/average time, and performance rating at the end of the game.
+10. Review the final report, including your score, accuracy, total time,
+    average response time, and performance message.
 
 6. 📂 Project Structure
-   
+
 simple-quiz-game/
+│
+├── main.c        # Main C source code containing the quiz questions and program logic
+├── README.md     # Project documentation and usage instructions
+└── .gitignore    # Optional Git ignore rules for generated files
 
-├── main.c           # Complete C source code (15 questions, interactive menu, timer)
 
-├── README.md        # Detailed project documentation
+7. ⏱️ Unique Feature: Response Timer & Performance Analytics
 
-└── .gitignore       # Excludes built executable binaries (.exe, .out, object files)
+The project's key feature is its response-time measurement and
+performance analysis system.
+
+-   Question Timing: Records the start and end time for each
+    question using `time()` and calculates the elapsed time with
+    `difftime()`.
+-   Total Time Calculation: Adds the response times to calculate the
+    total quiz time.
+-   Average Response Time: Calculates the average time taken per
+    question.
+-   Accuracy Calculation: Calculates the percentage of correct
+    answers.
+-   Performance Evaluation: Displays an automatic performance
+    message based on the final accuracy percentage.
+
+This feature helps learners assess both their subject knowledge and
+their speed when answering questions.
+
+8. 📊 Performance Evaluation
+
+The program evaluates the final accuracy percentage using the following
+criteria:
+
+  Accuracy            Performance Message
+  ------------------- ------------------------------------
+  100%                Outstanding! Perfect Score!
+  75% to below 100%   Excellent Job!
+  50% to below 75%    Good Effort! Room for improvement.
+  Below 50%           Needs Practice. Keep learning!
+
+9. 🔮 Future Improvements
+
+Possible future improvements include:
+
+-   Adding more questions and subject categories.
+-   Saving candidate scores and quiz history in a file.
+-   Adding a leaderboard to compare results.
+-   Allowing users to set a time limit for each question.
+-   Adding random question selection.
+
+10. 👨‍💻 Author
+
+MD HAMIM SHAHRIAR\
+Department of Computer Science & Engineering\
+Pundra University of Science & Technology\
+Batch: 20\
+Roll Number: 0322410105101042\
+GitHub:
+[mdhamimshahriar1449-cpu](https://github.com/mdhamimshahriar1449-cpu)
+
+------------------------------------------------------------------------
+
+Course: Software Development Lab I\
+Project: Simple Quiz Game\
+Programming Language: C
