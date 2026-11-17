@@ -9,8 +9,6 @@ Technology**.
 
 👤 Member 1 Information
 
-  Field             Details
-  ----------------- -------------------------------------------
   Name             : MD HAMIM SHAHRIAR
   
   Roll Number      : 0322410105101042
