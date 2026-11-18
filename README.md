@@ -19,7 +19,21 @@ Technology**.
   
   University       ; Pundra University of Science & Technology
   
-  GitHub Username   : `mdhamimshahriar1449-cpu`
+  GitHub Username   : mdhamimshahriar1449-cpu
+  
+👤 Member 2 Information
+
+  Name             : Tania  Khatun
+  
+  Roll Number      : 03225105101028
+  
+  Batch            : 20
+  
+  Department       : Computer Science & Engineering
+  
+  University       ; Pundra University of Science & Technology
+  
+  GitHub Username   : 
 
 1. 📌 Project Overview
 
